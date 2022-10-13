@@ -17,7 +17,9 @@ function onButonClicked() {
   var checkValue = sumOfDob % luckyNumberInputValue;
   console.log(checkValue);
   function check() {
-    if (checkValue == 0) {
+    if (luckyNumberInputValue <=0 || DobValue ==0 ){
+      lucky.innerText = "Please enter vaild input";
+    } else if(checkValue == 0) {
       console.log("Your Birthday is Lucky");
       lucky.innerText = "Your Birthday is Lucky 😎🎉🥳";
     } else {
